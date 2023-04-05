@@ -6,7 +6,7 @@ require "rails/all"
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-module Schedule2
+  module Rails1
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0
@@ -18,5 +18,15 @@ module Schedule2
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+    config.i18n.default_locale = :ja
+  end
+
+  module TimeFormatSandbox
+    class Application < Rails::Application
+      # タイムゾーンを日本時間に設定
+      config.time_zone = 'Asia/Tokyo'
+      # デフォルトのロケールを日本（ja）に設定
+      config.i18n.default_locale = :ja
+    end
   end
 end

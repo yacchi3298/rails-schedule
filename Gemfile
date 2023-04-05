@@ -70,3 +70,19 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+gem 'bootstrap', '~> 4.3.1'
+gem 'jquery-rails'
+
+# Reduces boot times through caching; required in config/boot.rb
+gem 'rails-i18n'
+gem 'pry-rails'
+
+gem 'bootstrap-datetimepicker-rails'
+
+gem 'jquery-rails'
+gem "bootstrap4-datetime-picker-rails"
+gem 'momentjs-rails'
+gem "font-awesome-rails"
+
+gem 'jquery-datetimepicker-rails'
